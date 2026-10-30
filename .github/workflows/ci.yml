@@ -60,7 +60,7 @@ jobs:
       - name: Run tests
         env:
           PYTHONPATH: ${{ github.workspace }}:${{ github.workspace }}/scenarios
-        run: uv run pytest tests/unit/ -v
+        run: uv run pytest tests/unit/ -v --cov=archon --cov-report=term --cov-report=html
       - name: Upload coverage
         uses: actions/upload-artifact@v4
         if: always()
