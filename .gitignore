@@ -1,0 +1,52 @@
+# Archon .gitignore
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+dist/
+build/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Archon specific
+results/
+*.log
+*.err
+battle_logs/
+
+# Docker
+.docker/
+
+# OS
+Thumbs.db
+
+# Local copies of related work
+AgentArena/
+
+# Internal docs
+arcon.md
+claude-chat.md
+PORTFOLIO_READINESS_PLAN.md
+plan.md
+research.md
